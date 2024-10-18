@@ -45,3 +45,21 @@ export function aufgabe01(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe01]", aufgabe01)
+
+export function aufgabe02(args) {
+  const input = args
+  const result = []
+  //Lauft Zeichen für Zeichen über den ganzen Text
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    const upperCaseLetter = currentElement.toUpperCase()
+
+    //Hänge den Code Doppelt an
+    result.push(upperCaseLetter)
+  }
+
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe02]", aufgabe02)
