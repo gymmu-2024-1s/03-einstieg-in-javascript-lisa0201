@@ -104,3 +104,42 @@ export function aufgabe08(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe08]", aufgabe08)
+
+export function aufgabe09(args) {
+  const input = args
+  const result = []
+
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    count = count + 1
+  }
+
+  // count hat die Zeichen gezählt
+  let genau6 = false
+  if (count === 6) {
+    genau6 = true
+  }
+
+  return genau6
+}
+
+linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
+
+export function aufgabe05(args) {
+  const input = args
+
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const currentElement
+
+  }
+
+
+
+
+
+
+
+  linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
