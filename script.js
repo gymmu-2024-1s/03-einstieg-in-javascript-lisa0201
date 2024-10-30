@@ -129,17 +129,20 @@ linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
 export function aufgabe05(args) {
   const input = args
 
+  let hasUpperCaseLetter = false
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    const currentElement
+    const upperCaseVersion = currentElement.toUpperCase()
 
+    if (currentElement === ".") {
+    } else if (currentElement === " ") {
+    } else if (currentElement === upperCaseVersion) {
+      hasUpperCaseLetter = true
+    }
   }
 
+  return hasUpperCaseLetter
+}
 
-
-
-
-
-
-  linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
