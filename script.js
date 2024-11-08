@@ -109,7 +109,10 @@ export function aufgabe09(args) {
   const input = args
   const result = []
 
+  // Zaehlt die Zeichen
   let count = 0
+
+  // Lauft Zeichen für Zeichen über den ganzen Text
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     count = count + 1
