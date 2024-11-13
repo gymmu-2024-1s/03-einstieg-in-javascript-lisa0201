@@ -136,6 +136,8 @@ export function aufgabe05(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+
+    // Hier machen wir einen neuen Code, um die Groẞbuchstaben zu erkennen
     const upperCaseVersion = currentElement.toUpperCase()
 
     if (currentElement === ".") {
@@ -170,3 +172,50 @@ export function aufgabe15(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe15]", aufgabe15)
+
+export function aufgabe12(args) {
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === "e") {
+      result.push(i)
+    } else if (currentElement === "E") {
+      result.push(i)
+    } else {
+      result.push(-1)
+    }
+  }
+
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
+
+export function aufgabe11(args) {
+  const input = args
+  const result = []
+
+  //Erstelle eine Variable um den ASCII-Code zu speichern
+  let asciiCode = 0
+
+  //Speichere den ASCII-Code vom ersten Zeichen
+  asciiCode = input.charCodeAt(0)
+
+  //Gib den ASCII zurück
+  return asciiCode
+}
+
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
+
+
+export function aufgabe07(args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const currentElement = input[i+1]
+    const currentElement = input[i+2]
