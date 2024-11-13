@@ -206,16 +206,31 @@ export function aufgabe11(args) {
   return asciiCode
 }
 
-  return result.join("")
-}
-
 linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
-
 
 export function aufgabe07(args) {
   const input = args
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    const currentElement = input[i+1]
-    const currentElement = input[i+2]
+
+    // Speichere mir das nächste Element
+    const nextElement = input[i + 1]
+
+    // Speichere mir das übernaechste Element
+    const nextNextElement = input[i + 2]
+
+    // Üperprüfe ob ein u, ein n und d hintereinanderstehen
+    if (
+      currentElement === "u" &&
+      nextElement === "n" &&
+      nextNextElement === "d"
+    ) {
+      return true
+    }
+  }
+
+  // Wenn im ganzen Text kein und vorkommt, dann gib false zurueck
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
