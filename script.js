@@ -234,3 +234,26 @@ export function aufgabe07(args) {
   return false
 }
 linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
+
+export function aufgabe06(args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+
+    if (48 <= ascii && ascii <= 57) {
+      // IST OKAY, MACHE WEITER
+    } else if (65 <= ascii && ascii <= 90) {
+      // IST OKAY, MACHE WEITER
+    } else if (97 <= ascii && ascii <= 122) {
+      // IST OKAY, MACHE WEITER
+    } else {
+      return true
+    }
+  }
+
+  return false
+}
+
+linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)

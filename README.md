@@ -53,7 +53,7 @@ Grossbuchstabe vorkommt.
 ## Aufgabe 06
 
 Schreibe eine Funktion, die testet, ob in einem Text mindestens ein
-Sonderzeichen vorkommt. s
+Sonderzeichen vorkommt.
 
 ## Aufgabe 07
 
@@ -61,7 +61,7 @@ Schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
 
 ## Aufgabe 08
 
-Ersetze alle `e`s mit einer `3`.
+Ersetze alle `e`s mit einer `3`
 
 ## Aufgabe 09
 
