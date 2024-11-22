@@ -272,3 +272,27 @@ export function aufgabe19(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
+
+export function aufgabe22(args) {
+  const input = args
+  const result = []
+
+  let foundK = false
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wenn das K noch nicht gefunden  wurde, hänge unterstriche an REsult
+    if (foundK === false) {
+      result.push("_")
+    } else {
+      result.push(currentElement)
+    }
+
+    // WEnn daas aktuelle Zeichen ein K ist, setzte foundK auf true
+    if (currentElement === "k") {
+      foundK = true
+    }
+  }
+  return result.join("")
+}
+linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
