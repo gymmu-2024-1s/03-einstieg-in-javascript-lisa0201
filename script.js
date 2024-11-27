@@ -296,3 +296,26 @@ export function aufgabe22(args) {
   return result.join("")
 }
 linkupExerciseHandler("[data-click=aufgabe22]", aufgabe22)
+
+export function aufgabe23(args) {
+  const input = args
+  const result = []
+  // Bitte erstelle mir eine neue variable die das erste zeichen von input speichert
+  const firstElement = input[0]
+
+  // Bitte hänge das erste element an result an
+  result.push(firstElement)
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // hänge current element an result an
+    result.push(currentElement)
+  }
+
+  // bitte hänge das erste element nochmals ganz hinten an result an¨
+  result.push(firstElement)
+
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe23]", aufgabe23)
