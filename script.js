@@ -323,10 +323,21 @@ linkupExerciseHandler("[data-click=aufgabe23]", aufgabe23)
 export function aufgabe24(args) {
   const input = args
   const result = []
+
+  if (input.length < 2) {
+    return input
+  }
+
   // Bitte erstelle mir eine neue variable die das erste zeichen von input speichert
   const firstElement = input[0]
 
-  for (let i = 0; i < input.length; i++) {
+  //Bitte erstelle mir eine neue variable die das letzte zeichen von input speichert
+  const lastElement = input[input.length - 1]
+
+  //Bitte hange das letzte element ganz hinten an result an
+  result.push(lastElement)
+
+  for (let i = 1; i < input.length - 1; i++) {
     const currentElement = input[i]
     // hange current element an result an
     result.push(currentElement)
@@ -335,13 +346,26 @@ export function aufgabe24(args) {
   // bitte hange das erste element ganz hinten an result an
   result.push(firstElement)
 
-  //Bitte erstelle mir eine neue variable die das letzte zeichen von input speichert
-  const lastElement = input[input.length - 1]
-
-  //Bitte hange das letzte element ganz hinten an result an
-  result.push(lastElement)
-
   return result.join("")
 }
 
 linkupExerciseHandler("[data-click=aufgabe24]", aufgabe24)
+
+export function aufgabe25(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Bitte erstelle mir eine neue Variable, die das mittlere Zeichen der Eingabe speichert
+    const middleElement = input[input.length / 2]
+
+    //Bitte lösche das mittlere Element
+    if (currentElement === middleElement) {
+    } else {
+      result.push(currentElement)
+    }
+  }
+}
+
+linkupExerciseHandler("[data-click=aufgabe25]", aufgabe25)
