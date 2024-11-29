@@ -355,17 +355,35 @@ export function aufgabe25(args) {
   const input = args
   const result = []
 
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    //Bitte erstelle mir eine neue Variable, die das mittlere Zeichen der Eingabe speichert
-    const middleElement = input[input.length / 2]
+  if (input.length % 2 === 0) {
+    const middleIndex = Math.floor(input.length / 2) - 1
+    const middlePlusOneIndex = middleIndex + 1
 
-    //Bitte lösche das mittlere Element
-    if (currentElement === middleElement) {
-    } else {
-      result.push(currentElement)
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+
+      if (i === middleIndex || i === middlePlusOneIndex) {
+        // lasse das element aus
+      } else {
+        result.push(currentElement)
+      }
+    }
+  } else {
+    //Bitte erstelle eine Variable, die das mittlere Zeichen speichert
+    const middleIndex = Math.floor(input.length / 2)
+
+    for (let i = 0; i < input.length; i++) {
+      const currentElement = input[i]
+
+      if (i === middleIndex) {
+        // lasse das element aus
+      } else {
+        result.push(currentElement)
+      }
     }
   }
+
+  return result.join("")
 }
 
 linkupExerciseHandler("[data-click=aufgabe25]", aufgabe25)
