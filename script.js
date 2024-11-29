@@ -387,3 +387,18 @@ export function aufgabe25(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe25]", aufgabe25)
+
+export function aufgabe26(args) {
+  const input = args
+  const result = []
+
+  //Bitte erstelle eine neue Variable, die dass erste Element speichert
+  const firstElement = input[0]
+
+  //Bitte erstelle eine neue Variable, die dass zweite Element speichert
+  const secondElement = input[1]
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+  }
+}
