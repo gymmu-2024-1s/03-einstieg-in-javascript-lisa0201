@@ -423,11 +423,14 @@ export function aufgabe27(args) {
   const input = args
   const result = []
 
+  if (input.length === 0) {
+    return false
+  }
+
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt(0)
 
-    // überprüfe ob die Eingabe eine Zahl ist
     if (48 <= ascii && ascii <= 57) {
       // IST OKAY, MACHE WEITER
     } else {
