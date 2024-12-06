@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/dGPk4_Tz)
+
 # Einstieg ins Programmieren mit Javascript
 
 Dieses Projekt bietet viele Aufgaben mit automatischen Tests, bei denen Sie das
@@ -59,7 +61,7 @@ Schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
 
 ## Aufgabe 08
 
-Ersetze alle `e`s mit einer `3`.
+Ersetze alle `e`s mit einer `3`
 
 ## Aufgabe 09
 
