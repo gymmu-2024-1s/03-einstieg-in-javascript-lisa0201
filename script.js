@@ -422,4 +422,20 @@ linkupExerciseHandler("[data-click=aufgabe26]", aufgabe26)
 export function aufgabe27(args) {
   const input = args
   const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+
+    // überprüfe ob die Eingabe eine Zahl ist
+    if (48 <= ascii && ascii <= 57) {
+      // IST OKAY, MACHE WEITER
+    } else {
+      return false
+    }
+  }
+
+  return true
 }
+
+linkupExerciseHandler("[data-click=aufgabe27]", aufgabe27)
