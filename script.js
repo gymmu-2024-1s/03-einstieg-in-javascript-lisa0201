@@ -179,16 +179,14 @@ export function aufgabe12(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
+    //Finde die Position des letzten `e`s in einer Zeichenkette
+
     if (currentElement === "e") {
-      result.push(i)
-    } else if (currentElement === "E") {
-      result.push(i)
-    } else {
-      result.push(-1)
+      return i
     }
   }
 
-  return result.join("")
+  return -1
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 
