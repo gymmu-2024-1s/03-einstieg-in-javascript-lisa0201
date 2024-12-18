@@ -477,17 +477,18 @@ linkupExerciseHandler("[data-click=aufgabe17]", aufgabe17)
 export function aufgabe13(args) {
   const input = args
   const result = []
+  let pos = -1
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
 
-    //Suche die Position des letzten `e`s in einem Text
+    //Suche die Position des ersten `e`s in einer Zeichenkette
 
     if (currentElement === "e") {
-      result.push(i)
+      pos = i
     }
   }
 
-  return result
+  return pos
 }
 
 linkupExerciseHandler("[data-click=aufgabe13]", aufgabe13)
