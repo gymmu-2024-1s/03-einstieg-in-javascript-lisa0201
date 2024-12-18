@@ -459,3 +459,19 @@ export function aufgabe04(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
+
+export function aufgabe17(args) {
+  const input = args
+  const totalist = []
+  const currentList = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    // Wenn wir auf ein Leerzeichen treffen, dann schreiben wir alles was wir bisher jetzt haben in die totalist
+  }
+
+  return totalist
+}
+
+linkupExerciseHandler("[data-click=aufgabe17]", aufgabe17)
