@@ -510,3 +510,16 @@ linkupExerciseHandler("[data-click=aufgabe21]", aufgabe21)
 export function aufgabe20(args) {
   const input = args
   const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //Überprüfe, ob nach jedem Punkt ein Leerzeichen eingefügt wurde.
+    if (currentElement === ".") {
+      if (input[i + 1] === " ") {
+        return true
+      }
+      return false
+    }
+  }
+}
+linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
