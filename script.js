@@ -693,3 +693,30 @@ export function aufgabe33(args) {
   return false
 }
 linkupExerciseHandler("[data-click=aufgabe33]", aufgabe33)
+
+export function SelectionSort(args) {
+  const text = args
+  const list = text.split("") // Text in eine Liste umwandeln, um Elemente zu vertauschen.
+
+  for (let i = 0; i < list.length - 1; i++) {
+    let minIndex = i // Index des kleinsten Elements im restlichen Array.
+
+    for (let j = i + 1; j < list.length; j++) {
+      if (list[j].charCodeAt(0) < list[minIndex].charCodeAt(0)) {
+        minIndex = j
+      }
+    }
+
+    if (minIndex !== i) {
+      // Elemente tauschen, wenn ein kleineres Element gefunden wurde.
+      const tmp = list[i]
+      list[i] = list[minIndex]
+      list[minIndex] = tmp
+    }
+  }
+
+  const result = list.join("") // Liste wieder zu einem String zusammenfügen.
+  return result
+}
+
+linkupExerciseHandler("[data-click=SelectionSort]", SelectionSort)
