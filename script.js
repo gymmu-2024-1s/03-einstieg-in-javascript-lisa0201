@@ -596,3 +596,35 @@ export function aufgabe30(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe30]", aufgabe30)
+
+export function aufgabe31(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+    const shiftedLetter = String.fromCharCode(ascii + 5)
+    result.push(shiftedLetter)
+  }
+
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe31]", aufgabe31)
+
+export function aufgabe32(args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+    const shiftedLetter = String.fromCharCode(ascii - 5)
+    result.push(shiftedLetter)
+  }
+
+  return result.join("")
+}
+
+linkupExerciseHandler("[data-click=aufgabe32]", aufgabe32)
