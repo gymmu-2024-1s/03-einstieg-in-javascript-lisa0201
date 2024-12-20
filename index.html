@@ -22,6 +22,41 @@
 
       <div class="button-container">
         <!-- TODO: Hier neue Buttons erstellen. -->
+        <button type="button" data-click="aufgabe32">
+          Caesar Entschlüsselung
+        </button>
+        <button type="button" data-click="aufgabe31">
+          Caesar Verschlüsselung
+        </button>
+
+        <button type="button" data-click="InsertionSort">Insertion Sort</button>
+        <button type="button" data-click="SelectionSort">SelectionSort</button>
+        <button type="button" data-click="aufgabe33">Aufgabe 33</button>
+        <button type="button" data-click="aufgabe10">Aufgabe 10</button>
+        <button type="button" data-click="BubbleSort">BubbleSort</button>
+        <button type="button" data-click="aufgabe30">Aufgabe 30</button>
+        <button type="button" data-click="aufgabe14">Aufgabe 14</button>
+        <button type="button" data-click="aufgabe20">Aufgabe 20</button>
+        <button type="button" data-click="aufgabe21">Aufgabe 21</button>
+        <button type="button" data-click="aufgabe13">Aufgabe 13</button>
+        <button type="button" data-click="aufgabe04">Aufgabe 04</button>
+        <button type="button" data-click="aufgabe27">Aufgabe 27</button>
+        <button type="button" data-click="aufgabe26">Aufgabe 26</button>
+        <button type="button" data-click="aufgabe25">Aufgabe 25</button>
+        <button type="button" data-click="aufgabe24">Aufgabe 24</button>
+        <button type="button" data-click="aufgabe23">Aufgabe 23</button>
+        <button type="button" data-click="aufgabe22">Aufgabe 22</button>
+        <button type="button" data-click="aufgabe19">Aufgabe 19</button>
+        <button type="button" data-click="aufgabe06">Aufgabe 06</button>
+        <button type="button" data-click="aufgabe07">Aufgabe 07</button>
+        <button type="button" data-click="aufgabe11">Aufgabe 11</button>
+        <button type="button" data-click="aufgabe12">Aufgabe 12</button>
+        <button type="button" data-click="aufgabe15">Aufgabe 15</button>
+        <button type="button" data-click="aufgabe05">Aufgabe 5</button>
+        <button type="button" data-click="aufgabe09">Aufgabe 9</button>
+        <button type="button" data-click="aufgabe08">Aufgabe 8</button>
+        <button type="button" data-click="aufgabe03">Aufgabe 3</button>
+        <button type="button" data-click="aufgabe02">Aufgabe 2</button>
         <button type="button" data-click="aufgabe01">Aufgabe 1</button>
       </div>
 
@@ -29,6 +64,67 @@
         <h2>Sortierverfahren</h2>
         <!-- TODO: Schreiben Sie hier zu Sortierverfahren-->
       </section>
+      <h3>Bubble Sort</h3>
+      <p>
+        Bubble Sort ist ein Sortieralgorithmus. Dabei wird ein Array paarweise
+        von links nach rechts in einer Bubble Phase durchlaufen. Array ist eine
+        Eingabeliste. Gestartet wird bei der ersten Zahl, diese wird verglichen
+        mit der Zahl direkt nebenan, demfalls rechts. Wenn die erste Zahl großer
+        ist, bleibt sie stehen. Wenn die erste Zahl kleiner ist, wird sie mit
+        der nächsten Zahl vertauscht. Dannach wird direkt das nächste Paar
+        miteinander verglichen bis die gesamte Liste e0inmal durchlaufen wurde.
+        Dieser Prozess wird so oft wiederholt, bis die Liste sortiert ist.
+      </p>
+      <h4>Beispiel:</h4>
+      <p>1, 4, 7, 6, 2, 5, 8</p>
+      <ul>
+        <li>1 ist kleiner als 4. Es bleibt</li>
+        <li>4 ist kleiner als 7. Es bleibt</li>
+        <li>7 ist grösser als 6. Es wird vertauscht</li>
+        <li>7 ist grösser als 2. Es wird vertauscht</li>
+        <li>7 ist grösser als 5. Es wird vertauscht</li>
+        <li>7 ist kleiner als 8. Es bleibt</li>
+      </ul>
+      So sieht die Liste nach dem 1. Durchlauf Sortierverfahren aus --> 1, 4, 6,
+      2, 5, 7, 8 7 Nach dem 1.Durchlauf macht man so lange Durchläufe bis die
+      Liste sortiert ist.
+
+
+      </section>
+      <h3>Selection Sort</h3>
+      <p>
+        Beim Selection Sort wird durch direktes Auswählen sortiert. Es funktioniert in zwei Richtungen. Entweder man sucht das kleinste oder das grösste Element. Das Vorgehen bleibt bei beiden Richtungen gleich. Wenn man beispielsweise 5 Zahlen hat, will man sie der Grösse nach sortieren. Man sucht zuerst nach der kleinsten Zahl und tauscht sie mit der Zahl aus die an erster Stelle steht. Die Zahl die nun bei der ersten Stelle steht muss nun bei den nächsten durchläufen beachtet werden. Beim nächsten Durchlauf vergleicht man wieder die Zahlen, die nächst kleinste wird nun mit der Karte vertauscht die auf der zweiten Stelle steht. Dies wird wiederholt bis die Liste sortiert ist.
+
+      </p>
+      <h4>Beispiel:</h4>
+      <p>5,4,7,2,1</p>
+      <ul>
+        <li>1 ist die kleinste Zahl. Sie wird mit der 5 vertauscht.</li>
+        <li>2 ist die nächst kleinste Zahl. Sie wird mit der 4 vertauscht.</li>
+        <li>4 ist die nächst kleinste Zahl. Sie wird mit der 7 vertauscht.</li>
+        <li>5 ist die nächst kleinste Zahl. Sie wird mit der 7 vertauscht.</li>
+        <li>7 ist die grösste Zahl. Sie bleibt a der Stelle.</li>
+      </ul>
+      So sollte die Liste nach dem Sortierverfahren aussehen --> 1, 2, 4, 5, 7
+
+
+      </section>
+      <h3>Insertion Sort</h3>
+      <p>
+        Beim Insertion Sort ist die erste Zahl in der Eingabe schon als sortierter Bereich angegeben. Die restlichen Zahlen in der Liste sind unsortiert. Man schaut sich die Zahl an zweier Stelle an. Man vergleicht ob sie grösser ist als die Zahl rechts von ihr. Wenn die Zahl grösser ist, wird sie vertauscht. Bei der Zahl die nun an zweiter Stelle ist, muss nun geprüft werden ob sie grösser ist als die Zahl links von ihr. Wenn sie grösser ist bleibt sie stehen und wenn sie kleiner ist wird sie vertauscht. Diesen Durchlauf macht man bis die Liste sortiert ist.
+
+
+      </p>
+      <h4>Beispiel:</h4>
+      <p>1, 4, 5, 3, 7</p>
+      <ul>
+        <li>4 is grösser als 1. Es bleibt</li>
+        <li>4  ist kleiner als 5. Es bleibt</li>
+        <li>5 ist grösser als 3. Es wird vertauscht</li>
+        <li>5 ist kleiner als 7. Es bleibt</li>
+
+      </ul>
+       So sieht die Liste nach dem 1.Durchlauf des Sortierverfahren aus --> 1, 4, 3, 5, 7. Dieser Durxhgang muss wiederholt werden bis die Liste sortiert ist.
     </div>
 
     <div id="output">
