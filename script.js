@@ -572,3 +572,27 @@ export function BubbleSort(args) {
 }
 
 linkupExerciseHandler("[data-click=bubbleSort]", BubbleSort)
+
+export function aufgabe30(args) {
+  const input = args
+  let sum = 0
+
+  if (input.length === 0) {
+    return false
+  }
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    const ascii = currentElement.charCodeAt(0)
+
+    if (48 <= ascii && ascii <= 57) {
+      // Wir haben eine Ziffer gefunden
+      const num = parseInt(currentElement)
+      sum = sum + num
+    }
+  }
+
+  return sum
+}
+
+linkupExerciseHandler("[data-click=aufgabe30]", aufgabe30)
