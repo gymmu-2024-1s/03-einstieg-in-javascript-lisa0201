@@ -467,7 +467,16 @@ export function aufgabe17(args) {
     const currentElement = input[i]
 
     // Wenn wir auf ein Leerzeichen treffen, dann schreiben wir alles was wir bisher jetzt haben in die totalist
+
+    if (currentElement === " ") {
+      totalist.push(currentList.join(""))
+      currentList.length = 0
+    } else {
+      currentList.push(currentElement)
+    }
   }
+
+  //Wir schreiben alles was wir n
 
   return totalist
 }
@@ -523,3 +532,22 @@ export function aufgabe20(args) {
   }
 }
 linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
+
+export function aufgabe14(args) {
+  // suche die Position de dritten e im Text.
+  const input = args
+  let position = -1
+  let countE = 0
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if (currentElement === "e") {
+      countE = countE + 1
+      if (countE === 3) {
+        position = i
+      }
+    }
+  }
+
+  return position
+}
