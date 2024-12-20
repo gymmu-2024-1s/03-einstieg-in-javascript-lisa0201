@@ -182,10 +182,11 @@ export function aufgabe12(args) {
 
     if (currentElement === "e") {
       return i
-    }
+    } // Gib die Position des letzten `e`s zurück
   }
 
   return -1
+  // Gib `-1` zurueck, falls kein `e` gefunden wurde
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 
