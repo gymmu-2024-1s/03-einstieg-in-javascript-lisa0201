@@ -534,7 +534,7 @@ export function aufgabe20(args) {
 linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
 
 export function aufgabe14(args) {
-  // suche die Position de dritten e im Text.
+  // suche die Stelle des dritten e in der Eingabe
   const input = args
   let position = -1
   let countE = 0
@@ -551,3 +551,4 @@ export function aufgabe14(args) {
 
   return position
 }
+linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
