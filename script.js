@@ -460,7 +460,7 @@ export function aufgabe17(args) {
     }
   }
 
-  //Wir schreiben alles was wir n
+  //Wir schreiben alles was wir bisher jetzt haben in die totalist
 
   return totalist
 }
@@ -536,3 +536,19 @@ export function aufgabe14(args) {
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
+
+export function aufgabe11(args) {
+  const input = args
+  const result = []
+
+  //Erstelle eine Variable um den ASCII-Code zu speichern
+  let asciiCode = 0
+
+  //Speichere den ASCII-Code vom ersten Zeichen
+  asciiCode = input.charCodeAt(0)
+
+  //Gib den ASCII zurück
+  return asciiCode
+}
+
+linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
