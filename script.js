@@ -190,22 +190,6 @@ export function aufgabe12(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe12]", aufgabe12)
 
-export function aufgabe11(args) {
-  const input = args
-  const result = []
-
-  //Erstelle eine Variable um den ASCII-Code zu speichern
-  let asciiCode = 0
-
-  //Speichere den ASCII-Code vom ersten Zeichen
-  asciiCode = input.charCodeAt(0)
-
-  //Gib den ASCII zurück
-  return asciiCode
-}
-
-linkupExerciseHandler("[data-click=aufgabe11]", aufgabe11)
-
 export function aufgabe07(args) {
   const input = args
 
@@ -233,29 +217,6 @@ export function aufgabe07(args) {
 }
 linkupExerciseHandler("[data-click=aufgabe07]", aufgabe07)
 
-export function aufgabe06(args) {
-  const input = args
-
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    const ascii = currentElement.charCodeAt(0)
-
-    if (48 <= ascii && ascii <= 57) {
-      // IST OKAY, MACHE WEITER
-    } else if (65 <= ascii && ascii <= 90) {
-      // IST OKAY, MACHE WEITER
-    } else if (97 <= ascii && ascii <= 122) {
-      // IST OKAY, MACHE WEITER
-    } else {
-      return true
-    }
-  }
-
-  return false
-}
-
-linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
-
 export function aufgabe19(args) {
   const input = args
   const result = []
@@ -268,6 +229,29 @@ export function aufgabe19(args) {
 
   return result.join("")
 }
+
+export function aufgabe06(args) {
+  const input = args
+  const result = []
+
+  let count = 0
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Wandelt ein Zeichen in einen Großbuchstaben um
+    const upperCaseVersion = currentElement.toUpperCase()
+    // Wandelt ein Zeichen in einen Kleinbuchstaben um
+    const lowerCaseVersion = currentElement.toLowerCase()
+    // Überprüfen, ob Groß- und Kleinschreibung keinen Unterschied machen
+    if (upperCaseVersion === lowerCaseVersion) {
+      // Gibt true zurück
+      return true
+    }
+  }
+  //Gibt falsch zurück
+  return false
+}
+
+linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
 
 linkupExerciseHandler("[data-click=aufgabe19]", aufgabe19)
 
@@ -552,5 +536,3 @@ export function aufgabe14(args) {
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
-
-export function aufgabe11(args) {}
