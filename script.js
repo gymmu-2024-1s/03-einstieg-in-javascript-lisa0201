@@ -109,7 +109,7 @@ export function aufgabe09(args) {
   const input = args
   const result = []
 
-  // Zaehlt die Zeichen
+  // Zählt die Zeichen
   let count = 0
 
   // Lauft Zeichen für Zeichen über den ganzen Text
@@ -143,6 +143,7 @@ export function aufgabe05(args) {
     if (currentElement === ".") {
     } else if (currentElement === " ") {
     } else if (currentElement === upperCaseVersion) {
+
       hasUpperCaseLetter = true
     }
   }
@@ -662,3 +663,5 @@ export function aufgabe10(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
+
+export function aufgabe33(args) {
