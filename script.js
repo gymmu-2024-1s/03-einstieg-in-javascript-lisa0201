@@ -68,19 +68,23 @@ export function aufgabe03(args) {
   const input = args
   const result = []
 
-  let count = 0
+  let count = 0 // Zählt, wie oft "e" oder "E" vorkommen
+
+  // Schleife geht durch jedes Element in input
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    const currentElement = input[i] // Nimmt das aktuelle Element
+
+    // Überprüft, ob das aktuelle Element "e" ist
     if (currentElement === "e") {
-      count = count + 1
+      count = count + 1 // Erhöht den Zähler um 1, wenn es "e" ist
     } else if (currentElement === "e") {
-      count = count + 1
+      count = count + 1 // Erhöht den Zähler um 1, wenn es "e" ist
     } else if (currentElement === "E") {
-      count++
+      count++ // Erhöht den Zähler um 1, wenn es "E" ist
     }
   }
 
-  return count
+  return count // Gibt die Anzahl der "e" und "E" zurück
 }
 linkupExerciseHandler("[data-click=aufgabe03]", aufgabe03)
 
