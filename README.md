@@ -157,4 +157,5 @@ Teste ob in einem Text Zahlen vorhanden sind und addiere sie
 
 ## Aufgabe 31
 
-Schreibe eine Funktion, die testet, ob in einem Text das Wort 'lisa' vorkommt.
+SSchreibe eine Funktion die den ASCII Code der Eingabe liest und umändert in den
+ASCII-Code der einzelnen Zeichen +5.
