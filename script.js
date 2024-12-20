@@ -425,11 +425,11 @@ export function aufgabe27(args) {
 
   if (input.length === 0) {
     return false
-  }
+  } // Wenn Input leer ist, weitermachen
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    const ascii = currentElement.charCodeAt(0)
+    const ascii = currentElement.charCodeAt(0) // charCodeAt liefert den ASCII-Wert eines Zeichens
 
     if (48 <= ascii && ascii <= 57) {
       // IST OKAY, MACHE WEITER
@@ -478,7 +478,7 @@ export function aufgabe13(args) {
     //Suche die Position des ersten `e`s in einer Zeichenkette
 
     if (currentElement === "e") {
-      pos = i
+      pos = i // Gib die Position des ersten `e`s zurueck
     }
   }
 
@@ -493,7 +493,7 @@ export function aufgabe21(args) {
 
   for (let i = input.length - 1; i >= 0; i--) {
     const currentElement = input[i]
-    result.push(currentElement)
+    result.push(currentElement) //hange current element an result an
   }
 
   return result.join("")
@@ -521,15 +521,15 @@ linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
 export function aufgabe14(args) {
   // suche die Stelle des dritten e in der Eingabe
   const input = args
-  let position = -1
-  let countE = 0
+  let position = -1 // Position des dritten e
+  let countE = 0 // Anzahl der e
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     if (currentElement === "e") {
       countE = countE + 1
       if (countE === 3) {
-        position = i
+        position = i /
       }
     }
   }
@@ -576,24 +576,24 @@ linkupExerciseHandler("[data-click=BubbleSort]", BubbleSort)
 
 export function aufgabe30(args) {
   const input = args
-  let sum = 0
+  let sum = 0 // Summe
 
   if (input.length === 0) {
     return false
-  }
+  } // Wenn Input leer ist, weitermachen
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    const ascii = currentElement.charCodeAt(0)
+    const currentElement = input[i] // Gebe das aktuelle Element aus
+    const ascii = currentElement.charCodeAt(0) // charCodeAt liefert den ASCII-Wert eines Zeichens
 
     if (48 <= ascii && ascii <= 57) {
       // Wir haben eine Ziffer gefunden
-      const num = parseInt(currentElement)
-      sum = sum + num
+      const num = parseInt(currentElement) // Konvertiere die Zeichenkette in eine Zahl
+      sum = sum + num // Addiere die Zahl zur Summe
     }
   }
 
-  return sum
+  return sum // Gib die Summe zurueck
 }
 
 linkupExerciseHandler("[data-click=aufgabe30]", aufgabe30)
