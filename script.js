@@ -129,28 +129,23 @@ export function aufgabe09(args) {
 
 linkupExerciseHandler("[data-click=aufgabe09]", aufgabe09)
 
-export function aufgabe05(args) {
+export function aufgabe04(args) {
   const input = args
+  let wordCount = 0
 
-  let hasUpperCaseLetter = false
-
+  // Zähle die Wörter
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-
-    // Hier machen wir einen neuen Code, um die Groẞbuchstaben zu erkennen
-    const upperCaseVersion = currentElement.toUpperCase()
-
-    if (currentElement === ".") {
-    } else if (currentElement === " ") {
-    } else if (currentElement === upperCaseVersion) {
-      hasUpperCaseLetter = true
+    // Erhöhe die Wortzahl bei jedem Leerzeichen
+    if (currentElement === " ") {
+      wordCount = wordCount + 1
     }
   }
-
-  return hasUpperCaseLetter
+  // Gib die Anzahl der Wörter zurück
+  return wordCount + 1
 }
 
-linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 
 export function aufgabe15(args) {
   const input = args
@@ -230,24 +225,43 @@ export function aufgabe19(args) {
   return result.join("")
 }
 
+export function aufgabe05(args) {
+  const input = args
+  let count = 0
+
+  // Zähle die Großbuchstaben
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // Hole den ASCII-Wert des Zeichens
+    const asciiCode = currentElement.charCodeAt(0)
+    // Prüfe, ob es ein Großbuchstabe ist
+    if (asciiCode >= 65 && asciiCode <= 90) {
+      count = count + 1
+    }
+  }
+
+  // Wenn es Großbuchstaben gibt, gib true zurück, sonst false
+  return count > 0
+}
+
+linkupExerciseHandler("[data-click=aufgabe05]", aufgabe05)
+
 export function aufgabe06(args) {
   const input = args
   const result = []
   let count = 0
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    // Wandelt ein Zeichen in einen Großbuchstaben um
-    const upperCaseVersion = currentElement.toUpperCase()
-    // Wandelt ein Zeichen in einen Kleinbuchstaben um
-    const lowerCaseVersion = currentElement.toLowerCase()
-    // Überprüfen, ob Groß- und Kleinschreibung keinen Unterschied machen
-    if (upperCaseVersion === lowerCaseVersion) {
-      // Gibt true zurück
-      return true
+    const asciiCode = currentElement.charCodeAt(0) // charCodeAt liefert den ASCII-Wert eines Zeichens
+    if (asciiCode >= 33 && asciiCode <= 63) {
+      count = count + 1
     }
   }
-  //Gibt falsch zurück
-  return false
+  if (count > 1) {
+    return true
+  } else {
+    return false
+  }
 }
 
 linkupExerciseHandler("[data-click=aufgabe06]", aufgabe06)
@@ -423,23 +437,6 @@ export function aufgabe27(args) {
 }
 
 linkupExerciseHandler("[data-click=aufgabe27]", aufgabe27)
-
-export function aufgabe04(args) {
-  const input = args
-
-  let count = 0
-
-  for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    if (currentElement === " ") {
-      count = count + 1
-    }
-  }
-
-  return count + 1
-}
-
-linkupExerciseHandler("[data-click=aufgabe04]", aufgabe04)
 
 export function aufgabe17(args) {
   const input = args
