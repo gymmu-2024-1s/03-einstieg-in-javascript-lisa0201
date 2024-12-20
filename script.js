@@ -552,3 +552,5 @@ export function aufgabe14(args) {
   return position
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
+
+export function aufgabe11(args) {}
