@@ -157,4 +157,4 @@ Teste ob in einem Text Zahlen vorhanden sind und addiere sie
 
 ## Aufgabe 31
 
-Schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
+Schreibe eine Funktion, die testet, ob in einem Text das Wort 'lisa' vorkommt.
