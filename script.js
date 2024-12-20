@@ -519,22 +519,22 @@ export function aufgabe20(args) {
 linkupExerciseHandler("[data-click=aufgabe20]", aufgabe20)
 
 export function aufgabe14(args) {
-  // suche die Stelle des dritten e in der Eingabe
+  // suche die Position de dritten e im Text.
   const input = args
-  let position = -1 // Position des dritten e
-  let countE = 0 // Anzahl der e
+  let position = -1 // Gib die Position der dritten `e` zurueck
+  let countE = 0 // Zahlen, die ein `e` vorkommen
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    const currentElement = input[i] //Suche die Position des ersten `e`s in einer Zeichenkette
     if (currentElement === "e") {
-      countE = countE + 1
+      countE = countE + 1 // Zahlen, die ein `e` vorkommen
       if (countE === 3) {
-        position = i /
+        position = i // Gib die Position der dritten `e` zurueck
       }
     }
   }
 
-  return position
+  return position // Gib die Position der dritten `e` zurueck
 }
 linkupExerciseHandler("[data-click=aufgabe14]", aufgabe14)
 
@@ -604,9 +604,9 @@ export function aufgabe31(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    const ascii = currentElement.charCodeAt(0)
-    const shiftedLetter = String.fromCharCode(ascii + 5)
-    result.push(shiftedLetter)
+    const ascii = currentElement.charCodeAt(0) // charCodeAt liefert den ASCII-Wert eines Zeichens
+    const shiftedLetter = String.fromCharCode(ascii + 5) // Verschiebe den ASCII-Wert um 5
+    result.push(shiftedLetter) // Hinzufuegen des verschobenen Zeichens
   }
 
   return result.join("")
@@ -621,8 +621,8 @@ export function aufgabe32(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt(0)
-    const shiftedLetter = String.fromCharCode(ascii - 5)
-    result.push(shiftedLetter)
+    const shiftedLetter = String.fromCharCode(ascii - 5) // Verschiebe den ASCII-Wert um 5
+    result.push(shiftedLetter) // Hinzufuegen des verschobenen Zeichens
   }
 
   return result.join("")
@@ -710,9 +710,9 @@ export function SelectionSort(args) {
 
     if (minIndex !== i) {
       // Elemente tauschen, wenn ein kleineres Element gefunden wurde.
-      const tmp = list[i]
-      list[i] = list[minIndex]
-      list[minIndex] = tmp
+      const tmp = list[i] // Elemente vertauschen.
+      list[i] = list[minIndex] // Elemente vertauschen.
+      list[minIndex] = tmp // Elemente vertauschen.
     }
   }
 
@@ -728,7 +728,7 @@ export function InsertionSort(args) {
 
   for (let i = 1; i < list.length; i++) {
     const currentElement = list[i]
-    let j = i - 1
+    let j = i - 1 // Index des aktuellen Elements.
 
     // Verschiebe die Elemente der sortierten Liste, die größer sind als das aktuelle Element,
     // um einen Platz nach rechts.
