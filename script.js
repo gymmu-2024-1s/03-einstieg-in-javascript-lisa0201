@@ -720,3 +720,29 @@ export function SelectionSort(args) {
 }
 
 linkupExerciseHandler("[data-click=SelectionSort]", SelectionSort)
+
+export function InsertionSort(args) {
+  const text = args
+  const list = text.split("") // Wandeln wir den Text in eine Liste um, die wir sortieren möchten.
+
+  for (let i = 1; i < list.length; i++) {
+    const currentElement = list[i]
+    let j = i - 1
+
+    // Verschiebe die Elemente der sortierten Liste, die größer sind als das aktuelle Element,
+    // um einen Platz nach rechts.
+    while (j >= 0 && list[j].charCodeAt(0) > currentElement.charCodeAt(0)) {
+      list[j + 1] = list[j]
+      j--
+    }
+
+    // Setze das aktuelle Element an die richtige Position.
+    list[j + 1] = currentElement
+  }
+
+  const result = list.join("") // Wandeln wir die Liste zurück in eine Zeichenkette.
+  return result
+}
+
+// Hier wird die Funktion an ein Element gebunden, das den Click-Handler hat.
+linkupExerciseHandler("[data-click=InsertionSort]", InsertionSort)
