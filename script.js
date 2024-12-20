@@ -143,7 +143,6 @@ export function aufgabe05(args) {
     if (currentElement === ".") {
     } else if (currentElement === " ") {
     } else if (currentElement === upperCaseVersion) {
-
       hasUpperCaseLetter = true
     }
   }
@@ -665,3 +664,32 @@ export function aufgabe10(args) {
 linkupExerciseHandler("[data-click=aufgabe10]", aufgabe10)
 
 export function aufgabe33(args) {
+  const input = args
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+
+    // Speichere mir das nächste Element
+    const nextElement = input[i + 1]
+
+    // Speichere mir das übernaechste Element
+    const nextNextElement = input[i + 2]
+
+    // Speichere mir das übernaechste Element
+    const nextNextNextElement = input[i + 3]
+
+    // Üperprüfe ob ein l, ein i, ein s und a hintereinanderstehen
+    if (
+      currentElement === "l" &&
+      nextElement === "i" &&
+      nextNextElement === "s" &&
+      nextNextNextElement === "a"
+    ) {
+      return true
+    }
+  }
+
+  // Wenn im ganzen Text kein lisa vorkommt, dann gib false zurueck
+  return false
+}
+linkupExerciseHandler("[data-click=aufgabe33]", aufgabe33)
