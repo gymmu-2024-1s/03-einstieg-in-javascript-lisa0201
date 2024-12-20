@@ -222,9 +222,9 @@ export function aufgabe19(args) {
   const result = []
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
-    result.push(currentElement)
-    result.push(currentElement)
+    const currentElement = input[i] // Nimmt das aktuelle Element
+    result.push(currentElement) // Hängt das aktuelle Zeichen an
+    result.push(currentElement) // Hängt das aktuelle Zeichen nochmal an
   }
 
   return result.join("")
