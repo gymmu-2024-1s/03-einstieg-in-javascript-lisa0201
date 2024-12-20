@@ -157,5 +157,14 @@ Teste ob in einem Text Zahlen vorhanden sind und addiere sie
 
 ## Aufgabe 31
 
-SSchreibe eine Funktion die den ASCII Code der Eingabe liest und umändert in den
+Schreibe eine Funktion die den ASCII Code der Eingabe liest und umändert in den
 ASCII-Code der einzelnen Zeichen +5.
+
+## Aufgabe 32
+
+Schreibe eine Funktion die den ASCII Code der Eingabe liest und umändert in den
+ASCII-Code der einzelnen Zeichen -5.
+
+## Aufgabe 33
+
+Schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
