@@ -154,3 +154,7 @@ Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
 ## Aufgabe 30
 
 Teste ob in einem Text Zahlen vorhanden sind und addiere sie
+
+## Aufgabe 31
+
+Schreibe eine Funktion, die testet, ob in einem Text das Wort 'und' vorkommt.
