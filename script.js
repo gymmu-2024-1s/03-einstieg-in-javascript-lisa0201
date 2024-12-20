@@ -155,10 +155,10 @@ export function aufgabe15(args) {
   const input = args
   const result = []
 
-  let leerzeichenErkannt = false
+  let leerzeichenErkannt = false // Wird auf true gesetzt, wenn ein Leerzeichen erkannt wird
 
   for (let i = 0; i < input.length; i++) {
-    const currentElement = input[i]
+    const currentElement = input[i] // Nimmt das aktuelle Element
 
     if (currentElement === " ") {
       leerzeichenErkannt = true
@@ -166,7 +166,7 @@ export function aufgabe15(args) {
 
     if (leerzeichenErkannt === false) {
       result.push(currentElement)
-    }
+    } // Hängt das aktuelle Zeichen an
   }
   return result.join("")
 }
