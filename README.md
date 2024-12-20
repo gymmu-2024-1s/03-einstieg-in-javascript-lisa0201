@@ -152,3 +152,5 @@ Testen Sie, ob in der Eingabe 2 Zahlen von einem Leerzeichen getrennt sind.
 Falls ja geben Sie die Summe als Ausgabe aus; sonst Fehlermeldung.
 
 ## Aufgabe 30
+
+Teste ob in einem Text Zahlen vorhanden sind und addiere sie
